@@ -23,30 +23,36 @@ export default function Home() {
   const fakeIPAddress = generateFakeIPAddress();
 
   return (
-    <div className="container max-w-1/2 m-auto bg-slate-900 text-gray-200 p-10 mt-10">
-      <h1 className="text-4xl text-purple-700 font-extrabold">Random IP</h1>
+    <div className="container max-w-1/2 m-auto bg-slate-900 text-gray-200 p-10 mt-10 flex gap-10">
+      <div className="w-1/2">
+        <h1 className="text-4xl text-purple-700 font-extrabold">Random IP</h1>
 
-      <p className="py-10">
-        Test out your skills with this random IP generater. <br />
-        Take the IP and convert it to binery.
-      </p>
+        <p className="py-10">
+          Test out your skills with this random IP generater. <br />
+          Take the IP and convert it to binery.
+        </p>
 
-      <p>
-        A couple of theis a day will keep the juices flowing and you nerding
-        out.
-      </p>
+        <p>
+          A couple of theis a day will keep the juices flowing and you nerding
+          out.
+        </p>
 
-      <h2 className="px-8 py-3 bg-gray-700 text-orange-500 w-fit font-2xl bg-opacity-10 shadow-md my-10">
-        {fakeIPAddress}
-      </h2>
+        <h2 className="px-8 py-3 bg-gray-700 text-orange-500 w-fit font-2xl bg-opacity-10 shadow-md my-10">
+          {fakeIPAddress}
+        </h2>
 
-      <a className="bg-green-500 text-gray-50 px-5 py-3 rounded-md" href="/">
-        Refresh IP
-      </a>
+        <a className="bg-green-500 text-gray-50 px-5 py-3 rounded-md" href="/">
+          Refresh IP
+        </a>
 
-      <div className="mt-10">
-        <p>I will look in to ass CIDR notation soon as I get 5 🫶 💀</p>
-        <p>Im also going to add a print out verson. </p>
+        <div className="mt-10">
+          <p>I will look in to ass CIDR notation soon as I get 5 🫶 💀</p>
+          <p>Im also going to add a print out verson. </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>section 2</h2>
       </div>
     </div>
   );
