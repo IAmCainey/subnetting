@@ -1,9 +1,8 @@
-import dynamic from "next/dynamic";
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   /**
    * Generates a fake IP address.
-   *
    * @returns {string} A fake IP address.
    */
   function generateFakeIPAddress() {
