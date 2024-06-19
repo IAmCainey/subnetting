@@ -22,9 +22,11 @@ export default function Home() {
   const fakeIPAddress = generateFakeIPAddress();
 
   return (
-    <div className="container max-w-1/2 m-auto bg-slate-900 text-gray-200 p-10 mt-10 flex gap-10">
-      <div className="w-1/2">
-        <h1 className="text-4xl text-purple-700 font-extrabold">Random IP</h1>
+    <div className="container max-w-1/2 m-auto bg-slate-900 text-gray-200 p-10 mt-10 md:flex gap-10">
+      <div className="w-full md:w-2/3">
+        <h1 className="text-4xl text-purple-700 font-extrabold">
+          Random IP Gen
+        </h1>
 
         <p className="py-10">
           Test out your skills with this random IP generater. <br />
@@ -32,7 +34,7 @@ export default function Home() {
         </p>
 
         <p>
-          A couple of theis a day will keep the juices flowing and you nerding
+          A couple of these a day will keep the juices flowing and you nerding
           out.
         </p>
 
@@ -40,7 +42,10 @@ export default function Home() {
           {fakeIPAddress}
         </h2>
 
-        <a className="bg-green-500 text-gray-50 px-5 py-3 rounded-md" href="/">
+        <a
+          className="bg-green-500 text-gray-50 px-5 py-3 rounded-md hover:bg-green-400 hover:shadow-md"
+          href="/"
+        >
           Refresh IP
         </a>
 
@@ -50,8 +55,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <h2>section 2</h2>
+      <div className="md:pt-0 pt-10">
+        <h2 className="text-2xl pb-5 text-purple-700 font-extrabold">Links</h2>
+        <ul className="flex gap-3 opacity-50`">
+          <ol>github</ol>
+          <ol>linked in</ol>
+        </ul>
       </div>
     </div>
   );
