@@ -18,8 +18,21 @@ export default function Home() {
     return ipAddress;
   }
 
+  function CIDR() {
+    // const cidrNotation = [22, 33, 44, 55];
+    // const random = Math.floor(Math.random() * cidrNotation.length);
+
+    // return random, cidrNotation[random];
+
+    const cidr = Math.floor(Math.random() * 32);
+
+    const CidrNotation = `${cidr}`;
+    return CidrNotation;
+  }
+
   // Usage Example
   const fakeIPAddress = generateFakeIPAddress();
+  const fakeCidrNotation = CIDR();
 
   return (
     <div className="container max-w-1/2 m-auto bg-slate-900 text-gray-200 p-10 mt-10 md:flex gap-10">
@@ -39,7 +52,7 @@ export default function Home() {
         </p>
 
         <h2 className="px-8 py-3 bg-gray-700 text-orange-500 w-fit font-2xl bg-opacity-10 shadow-md my-10">
-          {fakeIPAddress}
+          {fakeIPAddress} / {fakeCidrNotation}
         </h2>
 
         <a
