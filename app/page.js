@@ -1,5 +1,9 @@
 export const dynamic = "force-dynamic";
 
+import Link from "next/link";
+
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 export default function Home() {
   /**
    * Generates a fake IP address.
@@ -19,11 +23,6 @@ export default function Home() {
   }
 
   function CIDR() {
-    // const cidrNotation = [22, 33, 44, 55];
-    // const random = Math.floor(Math.random() * cidrNotation.length);
-
-    // return random, cidrNotation[random];
-
     const cidr = Math.floor(Math.random() * 32);
 
     const CidrNotation = `${cidr}`;
@@ -70,10 +69,14 @@ export default function Home() {
 
       <div className="md:pt-0 pt-10">
         <h2 className="text-2xl pb-5 text-purple-700 font-extrabold">Links</h2>
-        <ul className="flex gap-3 opacity-50`">
-          <ol>github</ol>
-          <ol>linked in</ol>
-        </ul>
+        <div className="grid grid-cols-4 gap-4">
+          <Link href="https://github.com/IAmCainey" target="blank">
+            <FaGithub className="text-2xl" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/paul-caine-489173b2/">
+            <FaLinkedinIn className="text-2xl" />
+          </Link>
+        </div>
       </div>
     </div>
   );
