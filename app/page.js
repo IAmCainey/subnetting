@@ -4,6 +4,12 @@ import Link from "next/link";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
+export const metadata = {
+  title: "Subnet Randomizer Test App",
+  description:
+    "Generated IP address and CIDR notation for your subnet learning needs. OSI Model and some other networking tips, tasks and helpers.",
+};
+
 export default function Home() {
   /**
    * Generates a fake IP address.
