@@ -1,6 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
+import Changes from "./changes";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
@@ -88,12 +89,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-10">
-          <h2>Changes</h2>
-          <ul>
-            <li>:: Added random IP gen and CIDR notation.</li>
-          </ul>
-        </div>
+        <Changes />
       </div>
 
       <div className="md:pt-0 pt-10">
